@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import api from './services/api';
+import Routes from './routes';
 
 import './styles.css'
 
@@ -29,8 +29,9 @@ import Main from './pages/main';
 //criando o componente por function menos verbosa
 const App = () => (
   <div className="App">
-    <Header></Header>
-    <Main></Main>
+    <Header/>
+    <Routes/>
   </div>
 );
+
 export default App;
